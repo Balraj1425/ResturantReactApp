@@ -10,7 +10,7 @@ class Footer extends React.Component {
     }
     render = () => {
         return (
-            <h5 style={{color:'black', textAlign: 'center'}}>copyright 2022 - {this.name.rName} | {this.name.rLoc}</h5>            
+            <h5 style={{color:'black', textAlign: 'center', color:'white'}}>copyright 2022 - {this.name.rName} | {this.name.rLoc}</h5>            
         );
     }
 }
