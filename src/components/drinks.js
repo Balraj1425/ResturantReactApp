@@ -4,7 +4,11 @@ function Drinks (props) {
     return(
         <div className='main-food-item'>
             <div className='food-items'>
-                <span className='item-padding drinks'>{props.dType}</span>
+                {
+                    props.dType === 'Mocktail' ? 
+                    (<span className='item-padding mocktails'>{props.dType}</span>):
+                    (<span className='item-padding cocktails'>{props.dType}</span>)
+                }
                 <strong>{props.dName}</strong>                
             </div>
             
